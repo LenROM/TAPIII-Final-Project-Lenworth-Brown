@@ -53,7 +53,7 @@ selectedFoodItem: any;
   ngOnInit(){
     
     this.id=this.route.snapshot.params['id'];
-    this.viewStudent();
+    this.viewMeal();
     this.fetchMeals();
 
     this.mealList.forEach((a:any)=>{
@@ -69,9 +69,8 @@ selectedFoodItem: any;
 this.cartserve.addToCart(meal);
   }
 
-
-  //creates function to fetch View Customer path from Student Services
-viewStudent(){
+  //creates function to fetch View  path from Student Services
+viewMeal(){
   this.customerService.fetchMealById(this.id).subscribe(res => {
     this.res=res;
 });
@@ -80,10 +79,6 @@ viewStudent(){
 
    fetchMeals(){
     this.customerService.fetchAllMeals().subscribe(res => {
-      // this.students = res;
-      // console.log(res['status']);
-      // console.log(res['results']);
-      // console.log(res['data']);
       this.meals = res['meals'];
       console.log(res['meals']);
     });

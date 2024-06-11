@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+#back {
+    width: 100vw;
+    height: 120vh;
+    background-size: cover;
+    position: relative;
+}
+
+#back h1 {
+    margin-top: 100px;
+    margin-left: 460px;
+    color: #401700;
+    position: absolute;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 75px;
+    -webkit-text-stroke: 1px #FF5C00;
+}
+
+#btn {
+    justify-content: center;
+    background-color: #D2470B;
+    color: #401717;
+    border-radius: 20px;
+    border: 2px solid #5B0000;
+    font-size: 20px;
+    padding: 5px;
+    width: 90px;
+    margin-bottom: 50px;
+    display: flex;
+    display: block;
+    margin: auto;
+    position: absolute;
+    margin-top: 306px;
+    margin-left: 630px;
+    cursor: pointer;
+}
+
+#btn2 {
+    justify-content: center;
+    background-color: #D2470B;
+    color: #401717;
+    border-radius: 20px;
+    border: 2px solid #5B0000;
+    font-size: 20px;
+    padding: 5px;
+    width: 90px;
+    display: flex;
+    display: block;
+    margin: auto;
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 630px;
+    cursor: pointer;
+}

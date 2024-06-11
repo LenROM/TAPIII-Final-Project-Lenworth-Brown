@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+#back {
+    width: 100vw;
+    height: 130vh;
+    background-size: cover;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+#contain {
+    position: absolute;
+    background-color: #ffffff50;
+    width: 1200px;
+    height: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 35px 0 35px 35px;
+}
+
+
+/* .three {
+    background-color: beige;
+    padding: 20px 0 280px 0;
+    border-radius: 10% / 50%;
+} */
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    margin-left: 60%;
+    width: 90px;
+    padding: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* background-image: url(https://64.media.tumblr.com/434737f5933ff2400e00259a289cf2b6/tumblr_nkg119subY1ri5c9qo1_640.jpg); */
+
+.card1 {
+    width: 300px;
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.cardz img {
+    width: 300px;
+    height: 150px;
+    display: block;
+    background-position: center;
+    background-size: contain;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: -2px;
+    margin-left: -1px;
+}
+
+.card1 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card2 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card3 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card4 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card5 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card6 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card7 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card8 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.card9 p {
+    color: #ff9808;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
+#fade {
+    margin-top: 110px;
+    background-color: #1a0f01b1;
+    height: 137px;
+    width: 298px;
+    line-height: 20px;
+    border-radius: 20px;
+    position: absolute;
+}
+
+#fade button {
+    position: absolute;
+    margin-left: 200px;
+    width: 90px;
+    border-radius: 20px;
+    margin-top: -50px;
+    background-color: #cd7700;
+}
+
+#fade a {
+    color: rgb(97, 44, 23);
+    font-size: 15px;
+    font-family: "Libre Baskerville", serif;
+    font-style: normal;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card2 {
+    width: 300px;
+    height: 150px;
+    background-position: center;
+    /* background-image: url(https://brooklyneagle.com/wp-content/uploads/2023/01/BonBon_SoupJoumou-scaled.jpg); */
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.card3 {
+    width: 300px;
+    height: 150px;
+    background-position: center;
+    /* background-image: url(https://i.ytimg.com/vi/iswHlhSBH6o/maxresdefault.jpg); */
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.card4 {
+    width: 300px;
+    height: 150px;
+    background-position: center;
+    /* background-image: url(https://seasonedskilletblog.com/wp-content/uploads/2020/06/jamaican_escovitch_fish_3-480x270.jpg); */
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 110px;
+}
+
+.card5 {
+    width: 300px;
+    height: 150px;
+    background-position: center;
+    /* background-image: url(https://i.ytimg.com/vi/dTYHJLcphCg/maxresdefault.jpg); */
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 110px;
+}
+
+.card6 {
+    width: 300px;
+    height: 150px;
+    background-position: center;
+    /* background-image: url(https://media-cdn.tripadvisor.com/media/photo-m/1280/14/ef/ff/db/stew-pork-with-rice-and.jpg); */
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 110px;
+}
+
+.card7 {
+    width: 300px;
+    height: 150px;
+    /* background-image: url(https://img-global.cpcdn.com/recipes/55ee9ed026072c4b/1200x630cq70/photo.jpg); */
+    background-position: center;
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 110px;
+}
+
+.card8 {
+    width: 300px;
+    height: 150px;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOwi3uNxABHCymROlInjI-o_l0_-UuN4GrDehJWGv_k5ck1z2eXMrolGWbpvawweCHXNU&usqp=CAU); */
+    background-position: center;
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 110px;
+}
+
+.card9 {
+    width: 300px;
+    height: 150px;
+    /* background-image: url(https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_1200,q_auto:low,fl_lossy,dpr_2.0,c_fill,f_auto,h_800,g_auto/t5jkc97xb2pzn0uxdilw); */
+    background-position: center;
+    background-size: cover;
+    line-height: 300px;
+    border: 2px solid rgb(216, 156, 25);
+    border-radius: 20px;
+    margin: 10px;
+    margin-top: 110px;
+}

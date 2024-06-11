@@ -1,0 +1,52 @@
+<ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="card-meal">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Order</th>
+                            <th>Meal</th>
+                            <th>Meal Name</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of meals, let i = index">
+                            <td>{{i+1}}</td>
+                            <td><img style="width:30%;" [src]="item['img']"></td>
+                            <td>{{item['meal_nm']}}</td>
+                            <td>{{item['description']}}</td>
+                            <td>${{item['price']}}</td>
+                            <td>{{item['order_tot']}}</td>
+                            <td>10170</td>
+                            <td><button class="btn btn-danger"><i class="fas fa-trash"></i>
+						</button>
+                                <td><a routerLink="/order/{{item['id']}}" style="margin-top: 10px;" type="button" class="btn btn-outline-primary">View</a> &nbsp;&nbsp;</td>
+                        </tr>
+                        <!-- order/{{item['id']}} -->
+                    </tbody>
+                </table>
+                <button></button>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+<ng-container *ngIf="false">
+    <div class="container">
+        <div class="card">
+            <h4 class="card-title"> My Cart</h4>
+        </div>
+        <div class="center">
+            <img src="" alt="">
+            <h5>Your Cart is empty!</h5>
+            <h6>Add item to it now</h6>
+            <button class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>

@@ -1,0 +1,46 @@
+#back {
+    width: 100vw;
+    height: 130vh;
+    background-size: cover;
+    position: relative;
+    display: block;
+    margin: auto;
+}
+
+.info2 {
+    background-color: #fff;
+    height: 500px;
+    border-radius: 30px;
+    margin-top: -2%;
+    padding: 20px;
+}
+
+.content {
+    margin-top: 40px;
+    background-color: #cd7700;
+    padding-top: 8px;
+    height: 60.4%;
+    width: 50%;
+    color: rgb(97, 44, 23);
+    border: 10px solid rgb(97, 44, 23);
+    /* border: 2px solid red; */
+}
+
+.abpic {
+    /* border: 2px solid green; */
+    height: 500px;
+    width: 47%;
+    float: right;
+}
+
+.content p {
+    padding: 40px;
+    font-size: 20px;
+}
+
+.abpic img {
+    width: 80%;
+    margin-top: 40px;
+    margin-left: 5px;
+    border: 10px solid #cd7700;
+}

@@ -1,0 +1,40 @@
+<ng-container *ngIf="true">
+    <div class="container">
+        <div class="card-table">
+            <div class="card-meal">
+                <table class="table table-responsive">
+                    <tbody *ngFor="let order of orders, let i = index">
+                        <tr>
+                            <td>Name: {{order['fname']}} {{order['lname']}}</td>
+                        </tr>
+                        <tr>
+                            <td>Address: {{order['deli_addr']}}</td>
+                        </tr>
+                        <tr>
+                            <td>Meal Order: {{order['meal_nm']}}</td>
+                        </tr>
+                        <!-- <tr>
+                            <td>{{order.users.id['orders']}}</td>
+                        </tr> -->
+                        <tr>
+                            <td>{{order['order_tot']}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{order['delivery_status']}}</td>
+                        </tr>
+                        <tr>
+                            <td>10170</td>
+                        </tr>
+                        <tr>
+                            <td><button class="btn btn-danger"><i class="fas fa-trash"></i>
+						</button></tr>
+                        <tr>
+                            <!-- <td><a routerLink="/order/{{item['id']}}" style="margin-top: 10px;" type="button" class="btn btn-outline-primary">View</a> &nbsp;&nbsp;</td> -->
+                        </tr>
+                    </tbody>
+                </table>
+                <button></button>
+            </div>
+        </div>
+    </div>
+</ng-container>

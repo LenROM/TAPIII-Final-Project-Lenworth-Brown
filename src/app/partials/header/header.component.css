@@ -1,0 +1,36 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #401717;
+    position: sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+
+/* li {
+    
+} */
+
+li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+li a:hover {
+    background-color: #8d2727;
+}
+
+
+/* .active {
+    background-color: #8d2727;
+} */

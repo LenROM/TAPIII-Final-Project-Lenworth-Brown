@@ -1,0 +1,120 @@
+<!-- <div *ngFor="let meal of meals">
+    {{meal['meal_nm']}}
+</div> -->
+
+<div id="back" [ngStyle]="{backgroundImage:'url('+image+')'}">
+    <div id="contain">
+        <!-- <button style="position: absolute; margin-left: 1100px;" routerLink="/cart" class="btn btn-primary">
+                    <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+                    <div class="badge bg-danger">{{totalItemNumber}}</div>
+                </button> -->
+        <div class="three">
+            <div class="container">
+
+                <div class="card1" *ngFor="let meal of meals">
+                    <div class="cardz">
+                        <div id="fade">
+
+                            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">{{meal['meal_nm']}}</p>
+                            <p>{{meal['description']}}</p>
+
+                            <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> ${{meal['price']}}</p>
+
+                            <button (click)="openQtyModel(meal)"><a>Order</a></button>
+                            <!--  -->
+                            <!--  -->
+                        </div>
+                        <img [src]="meal['img']">
+
+                    </div>
+                </div>
+
+                <!-- <div class="card2">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">PUMPKIN SOUP</p>
+                        <p>A hearty, vegan meal made with squash, yams, veggies, and plenty of bold authentic Caribbean flavour. Try it!!</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $400.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card3">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">FRIED CHICKEN, RICE & PEAS</p>
+                        <p> Jamaican style fried chicken is served with a side of rice and peas. You'll never taste anything better</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $700.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card4">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">EXCOVITCH FISH SLICES</p>
+                        <p>This Escovitch fish recipe is crispy fried fish topped with a spicy pickled vegetable medley.</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $450.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card5">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">JERK CHICKEN WRAP</p>
+                        <p>Tortilla loaded with smoked pan chicken, packed with pepper jack cheese drizzled dressing amid lettuce, tomato, and onion.</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $750.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card6">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">STEW PORK, RICE & PEAS</p>
+                        <p>Stew is one of the most common product in Jamaica, it's also with a blend of spices all stewed to a silky texture with flavorful pork.</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $1000.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card7">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">RED PEAS SOUP </p>
+                        <p>Jamaican soup made from fresh peas, exotic spices, and tender beef which is slowly simmered in rich coconut milk.</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $450.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card8">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ACKEE & SALTFISH</p>
+                        <p>Ackee and saltfish comes together quickly with no real effort or skill required. It is a simple dish with loads of flavor.</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $600.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div>
+                <div class="card9">
+                    <div id="fade">
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">OXTAIL, RICE & PEAS</p>
+                        <p>You will love this delicious and authentic Jamaican Oxtail recipe that's juicy, flavourful, tender, and seasoned right down to di bone!</p>
+                        <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> $1,100.00</p>
+                        <button type="button"><a href="#">Order</a></button>
+                    </div>
+                </div> -->
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="myModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ordering an Amount of this Meal</h5>
+                <button type="button" class="close" data-dismiss="modal" routerLink="/order" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <label>How Many Do You Want?</label>
+                <input type="text" placeholder="Quantity" [(ngModel)]="quantity" class="form-control">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="placeOrder()">Add Item</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -40,7 +40,9 @@
 
 .abpic img {
     width: 80%;
+    height: 400px;
     margin-top: 40px;
     margin-left: 5px;
     border: 10px solid #cd7700;
+    background-color: #ffb545;
 }

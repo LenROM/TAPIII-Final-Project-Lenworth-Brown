@@ -6,6 +6,7 @@ import { CartserveService } from 'src/app/app-services/cartserve.service';
 import { CustomerService } from 'src/app/app-services/customer.service';
 import { HttpClient } from '@angular/common/http';
 import { OrderService } from 'src/app/app-services/order.service';
+import { EmployeeService } from 'src/app/app-services/employee.service';
 
 
 @Component({
@@ -36,7 +37,11 @@ selectedFoodItem: any;
 
   constructor(private route:ActivatedRoute, 
     private customerService:CustomerService, 
-    private cartserve:CartserveService, private authService:AuthService, private orderService:OrderService){
+    private cartserve:CartserveService, 
+    private authService:AuthService, 
+    private orderService:OrderService,
+    private empService:EmployeeService
+  ){
       
       const loggedData = localStorage.getItem(`loginRes`);
        if(loggedData != null){
@@ -86,7 +91,7 @@ viewMeal(){
   }
 
 openQtyModel(item: any){
-  debugger;
+  
   const model = document.getElementById('myModal');
   if(model != null){
     model.style.display = "block";

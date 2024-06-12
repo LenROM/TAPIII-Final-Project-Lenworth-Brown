@@ -15,7 +15,7 @@ import { RegisterComponent } from './auth/register/register.component';
 const routes: Routes = [
   //Routing Parameters for this application
   {path:'index', title: 'Home Page', component:HomeComponent, canActivate: [AuthGuard]},
-  {path:'menu', title: 'Menu', component:MenuComponent},
+  {path:'menu', title: 'Menu', component:MenuComponent, canActivate: [AuthGuard]},
   {path:'about', title: 'About', component:AboutComponent},
   {path:'cart', title: 'Cart', component:CartComponent},
   {path:'order/:id', title:'Order', component:OrderComponent},
